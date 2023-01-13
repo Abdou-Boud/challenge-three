@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+    margin-top: 20px;}
+.attribution a {
+    color: hsl(228, 45%, 44%); }
+.active:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+main {
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .card {
+    width: 15em;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: .7em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+    position: relative;
+
+}
+main .card .image {
+border-radius: .3em;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+cursor: pointer;
+
+}
+main .card .image svg {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+}
+main .card .image:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+}
+main .image:hover::before {
+    background-color: hsl(178deg 100% 50% / 36%);
+}
+main .image:hover svg {
+    opacity: 1;
+}
+main .card .image img {
+   max-width: 100%;
+}
+.card .profile-info h2 {
+   font-size: 1.5rem;
+   margin: .8em 0;
+}
+.card .profile-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8em;
+    color: hsl(215, 51%, 70%);
+}
+.card .profile-info .pr-da {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    padding-bottom: 1.2em;
+    font-size: 0.9rem;
+}
+.card .pr-da span {
+    display: flex;
+    align-items: center;
+}
+.card .pr-da span svg {
+    margin-right: 0.4em;
+}
+.date {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+.date svg {
+    margin-right: .4em;
+}
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+.personal-info p {
+    font-size: 0.9rem;
+    color: hsl(215, 51%, 70%)
+}
+.personal-info span {
+    color: #fff;
+}
+.personal-info img {
+    width: 1.5em;
+    
+}
