@@ -38,7 +38,7 @@ main {
     flex-direction: column;
 }
 main .card {
-    width: 15em;
+    width: 22em;
     background-color: hsl(216, 50%, 16%);
     border-radius: .7em;
     display: flex;
@@ -83,20 +83,19 @@ main .card .image img {
    margin: .8em 0;
 }
 .card .profile-info p {
-    font-size: 0.9rem;
     margin-bottom: 0.8em;
-    color: hsl(215, 51%, 70%);
+    line-height: 1.4;
 }
 .card .profile-info .pr-da {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid hsl(215, 32%, 27%);
     padding-bottom: 1.2em;
-    font-size: 0.9rem;
 }
 .card .pr-da span {
     display: flex;
     align-items: center;
+    color:hsl(178, 100%, 50%);
 }
 .card .pr-da span svg {
     margin-right: 0.4em;
@@ -104,7 +103,6 @@ main .card .image img {
 .date {
     display: flex;
     align-items: center;
-    color: hsl(215, 51%, 70%);
 }
 .date svg {
     margin-right: .4em;
@@ -112,17 +110,19 @@ main .card .image img {
 .personal-info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-top: 0.8em;
-}
-.personal-info p {
-    font-size: 0.9rem;
-    color: hsl(215, 51%, 70%)
 }
 .personal-info span {
     color: #fff;
 }
 .personal-info img {
     width: 1.5em;
+    margin-right: 1em;
+    border: 2px solid #fff;
+    border-radius: 50%;
     
+}
+.date, .personal-info p, .profile-info p {
+    color:hsl(215, 51%, 70%);
+    font-size: 1.2rem;
 }
